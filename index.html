@@ -3,289 +3,169 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Trading Course Landing Page</title>
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <title>Low Credit - Apply Now</title>
+
+    <script>
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '1770309327662725');
+    fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=1770309327662725&ev=PageView&noscript=1"
+    /></noscript>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
     
     <style>
+        /* Odoo containers ko override karne ke liye taaki white box na dikhe */
+        #wrapwrap, .s_embed_code, .container, .row, .col-lg-12, body, html {
+            background-color: #6c5ce7 !important;
+            background: #6c5ce7 !important;
+            box-shadow: none !important;
+            border: none !important;
+            padding: 0 !important;
+            margin: 0 !important;
+        }
+
         * {
+            box-sizing: border-box;
             margin: 0;
             padding: 0;
-            box-sizing: border-box;
             font-family: 'Poppins', sans-serif;
         }
 
-        body {
-            background-color: #11161a;
-            color: #ffffff;
-            display: flex;
-            justify-content: center;
-            align-items: center;
+        .page-wrapper {
+            background-color: #6c5ce7 !important;
             min-height: 100vh;
-            padding: 20px;
+            width: 100vw;
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            padding-top: 5vh;
+            padding-left: 16px;
+            padding-right: 16px;
+            position: relative;
         }
 
-        .container {
-            max-width: 480px;
+        .landing-card {
+            background-color: #ffffff !important;
+            border-radius: 36px !important;
             width: 100%;
-            background: #17212b;
-            border-radius: 24px;
-            padding: 30px 20px;
+            max-width: 380px;
+            padding: 32px 24px 28px 24px;
             text-align: center;
-            box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.5);
+            box-shadow: 0px 15px 35px rgba(0, 0, 0, 0.2) !important;
+            border: none !important;
+            outline: none !important;
         }
 
-        /* Profile/Logo Section */
-        .logo-container {
-            margin-bottom: 15px;
-        }
-
-        .logo-circle {
-            width: 120px;
-            height: 120px;
+        .icon-container {
+            width: 76px;
+            height: 76px;
+            background: #e8e6ff;
             border-radius: 50%;
-            border: 3px solid #2ecc71;
-            margin: 0 auto;
+            margin: 0 auto 20px auto;
             display: flex;
             justify-content: center;
             align-items: center;
-            background: #0f141c;
-            overflow: hidden;
+            position: relative;
         }
 
-        .logo-circle img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover; /* इससे आपकी फोटो सर्कल में पूरी तरह फिट बैठेगी */
+        .icon-container::before {
+            content: '';
+            position: absolute;
+            width: 96px;
+            height: 96px;
+            border-radius: 50%;
+            background: rgba(232, 230, 255, 0.4);
+            z-index: -1;
         }
 
-        /* Headings */
-        h1 {
-            font-size: 28px;
-            font-weight: 800;
-            letter-spacing: 1px;
-            margin-bottom: 15px;
-        }
-
-        h1 span {
-            color: #2ecc71;
-        }
-
-        /* Subtitle Features */
-        .sub-features {
-            list-style: none;
-            margin-bottom: 25px;
-        }
-
-        .sub-features li {
-            font-size: 14px;
-            margin-bottom: 8px;
-            color: #e0e0e0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            gap: 8px;
-        }
-
-        /* Main Telegram Button */
-        .btn-main {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            gap: 10px;
-            background: #2ecc71;
-            color: #11161a;
-            text-decoration: none;
-            padding: 14px 20px;
-            border-radius: 14px;
-            font-weight: 700;
-            font-size: 16px;
-            letter-spacing: 0.5px;
-            margin-bottom: 25px;
-            box-shadow: 0px 4px 15px rgba(46, 204, 113, 0.3);
-            transition: transform 0.2s, background 0.2s;
-        }
-
-        .btn-main:hover {
-            background: #27ae60;
-            transform: translateY(-2px);
-        }
-
-        /* Features List Card */
-        .features-card {
-            background: #1c2733;
+        .brand-icon {
+            width: 52px;
+            height: 52px;
+            background: #6c5ce7;
             border-radius: 16px;
-            padding: 20px;
-            text-align: left;
-            margin-bottom: 25px;
-        }
-
-        .features-card ul {
-            list-style: none;
-        }
-
-        .features-card li {
-            font-size: 15px;
-            font-weight: 600;
-            margin-bottom: 14px;
             display: flex;
-            align-items: center;
-            gap: 12px;
-        }
-
-        .features-card li:last-child {
-            margin-bottom: 0;
-        }
-
-        .check-icon {
-            background: #2ecc71;
-            color: #1c2733;
-            width: 20px;
-            height: 20px;
-            border-radius: 4px;
-            display: inline-flex;
             justify-content: center;
             align-items: center;
-            font-size: 12px;
-            font-weight: bold;
+            color: #ffffff;
+            font-weight: 700;
+            font-size: 20px;
         }
 
-        /* Stats Grid */
-        .stats-grid {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 10px;
-            margin-bottom: 25px;
-        }
+        .main-heading { font-size: 23px; color: #1e272e; font-weight: 700; margin-bottom: 6px; }
+        .sub-heading { font-size: 13.5px; color: #8395a7; margin-bottom: 30px; }
 
-        .stat-box {
-            background: #1c2733;
-            padding: 12px 5px;
-            border-radius: 12px;
-        }
+        .step-row { display: flex; align-items: flex-start; text-align: left; margin-bottom: 22px; }
+        .step-number { width: 32px; height: 32px; background-color: #e8e6ff; color: #6c5ce7; border-radius: 50%; display: flex; justify-content: center; align-items: center; font-weight: 600; font-size: 14px; margin-right: 14px; flex-shrink: 0; }
+        .step-title { font-size: 15px; font-weight: 600; color: #1e272e; margin-bottom: 2px; }
+        .step-desc { font-size: 12px; color: #8395a7; line-height: 1.4; }
 
-        .stat-box h3 {
+        /* Button Customization with White Text */
+        .download-btn {
+            display: block;
+            background: #6c5ce7;
+            color: #ffffff !important;
+            text-decoration: none !important;
             font-size: 16px;
-            font-weight: 700;
+            font-weight: 600;
+            padding: 15px;
+            border-radius: 16px;
+            margin-top: 30px;
+            margin-bottom: 12px;
+            box-shadow: 0px 8px 20px rgba(108, 92, 231, 0.35);
         }
 
-        .stat-box h3.green-text {
-            color: #2ecc71;
-        }
-
-        .stat-box p {
-            font-size: 11px;
-            color: #9aa0a6;
-            margin-top: 2px;
-        }
-
-        /* Secondary Outline Button */
-        .btn-outline {
-            display: inline-flex;
-            justify-content: center;
-            align-items: center;
-            gap: 8px;
-            border: 2px solid #2ecc71;
-            color: #2ecc71;
-            text-decoration: none;
-            padding: 12px 30px;
-            border-radius: 30px;
-            font-weight: 700;
-            font-size: 14px;
-            letter-spacing: 0.5px;
-            margin-bottom: 25px;
-            transition: background 0.2s, color 0.2s;
-        }
-
-        .btn-outline:hover {
-            background: #2ecc71;
-            color: #11161a;
-        }
-
-        /* Footer Disclaimer */
-        .disclaimer {
-            font-size: 10px;
-            color: #7f8c8d;
-            line-height: 1.5;
-            padding: 0 10px;
-        }
-
-        .disclaimer strong {
-            color: #f1c40f;
-        }
+        .footer-text { font-size: 11px; color: #b2bec3; display: flex; align-items: center; justify-content: center; gap: 4px; }
+        .footer-subtext { font-size: 11px; color: #b2bec3; margin-top: 2px; }
+        .lock-icon { width: 12px; height: 12px; fill: #b2bec3; }
     </style>
 </head>
 <body>
 
-    <div class="container">
-        
-        <!-- Logo Section -->
-        <div class="logo-container">
-            <div class="logo-circle">
-                <!-- आपकी फोटो यहाँ जोड़ दी गई है -->
-                <img src="https://i.ibb.co/FLPgSBHk/Tu-Q5o-VVl-Wgq-Es-Mq8s-R-2hrw6z-4-CQym-G1-ALaj-CU5jp-Ww-YLd4g618x-YBA7o68d-Oy-XHCSPC6ja-Synh-Uu-Pj-R3-W.jpg" alt="Purab Darda">
+    <div class="page-wrapper">
+        <div class="landing-card">
+            <div class="icon-container"><div class="brand-icon">LC</div></div>
+            <h1 class="main-heading">Apply Now & Get Money</h1>
+            <p class="sub-heading">Just 3 simple steps to approve your amount.</p>
+
+            <div class="step-row">
+                <div class="step-number">1</div>
+                <div class="step-content">
+                    <h3 class="step-title">Download App</h3>
+                    <p class="step-desc">Get the official Low Credit app from the link below</p>
+                </div>
             </div>
-        </div>
-
-        <!-- Main Heading (SEBI Registered हटा दिया गया है विसंगति से बचने के लिए) -->
-        <h1>Purab Darda ( SEBI REGISTERED )
-        
-        </h1>
-
-        <!-- Header bullet info -->
-        <ul class="sub-features">
-            <li>📈 Daily Market Updates</li>
-            <li>🔥 NIFTY • BANKNIFTY Analysis</li>
-            <li>💰 Smart Trading Community</li>
-        </ul>
-
-        <!-- Main Action Button -->
-        <a href="https://t.me/+Z7bTtxu4N4ZhNThl" class="btn-main">
-            🚀 JOIN TELEGRAM NOW
-        </a>
-
-        <!-- Premium Features List -->
-        <div class="features-card">
-            <ul>
-                <li><span class="check-icon">✓</span> Daily Trading Signals</li>
-                <li><span class="check-icon">✓</span> Market Learning & Analysis</li>
-                <li><span class="check-icon">✓</span> Live Trading Updates</li>
-                <li><span class="check-icon">✓</span> Beginner Friendly Community</li>
-            </ul>
-        </div>
-
-        <!-- Stats Boxes -->
-        <div class="stats-grid">
-            <div class="stat-box">
-                <h3 class="green-text">50K+</h3>
-                <p>Members</p>
+            <div class="step-row">
+                <div class="step-number">2</div>
+                <div class="step-content">
+                    <h3 class="step-title">Quick Registration</h3>
+                    <p class="step-desc">Create account & complete basic KYC</p>
+                </div>
             </div>
-            <div class="stat-box">
-                <h3 class="green-text">24/7</h3>
-                <p>Updates</p>
+            <div class="step-row">
+                <div class="step-number">3</div>
+                <div class="step-content">
+                    <h3 class="step-title">Receive Amount</h3>
+                    <p class="step-desc">Get money directly in your bank account</p>
+                </div>
             </div>
-            <div class="stat-box">
-                <h3 class="green-text">95%</h3>
-                <p>Analysis</p>
+
+            <a href="https://llowcredit.space-z.ai/" class="download-btn">Download App Now</a>
+
+            <div class="footer-text">
+                <svg class="lock-icon" viewBox="0 0 24 24"><path d="M18 8h-1V6c0-2.76-2.24-5-5-5S7 3.24 7 6v2H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2zm-6 9c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2zm3.1-9H8.9V6c0-1.71 1.39-3.1 3.1-3.1 1.71 0 3.1 1.39 3.1 3.1v2z"/></svg>
+                100% Secure Download
             </div>
+            <p class="footer-subtext">Click to download and start your application</p>
         </div>
-
-        <!-- Secondary Button -->
-        <div>
-            <a href="https://t.me/+Z7bTtxu4N4ZhNThl" class="btn-outline">
-                🔥 JOIN FREE CHANNEL NOW
-            </a>
-        </div>
-
-        <!-- Disclaimer Footer -->
-        <p class="disclaimer">
-            <strong>⚠️ Stock Market Investments Are Subject To Market Risks.</strong><br>
-            Disclaimer: Educational Purpose Only. Not SEBI Registered.
-        </p>
-
     </div>
-
 </body>
 </html>
