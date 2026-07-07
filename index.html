@@ -1,171 +1,78 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="hi">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Low Credit - Apply Now</title>
-
-    <script>
-    !function(f,b,e,v,n,t,s)
-    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-    n.queue=[];t=b.createElement(e);t.async=!0;
-    t.src=v;s=b.getElementsByTagName(e)[0];
-    s.parentNode.insertBefore(t,s)}(window, document,'script',
-    'https://connect.facebook.net/en_US/fbevents.js');
-    fbq('init', '1770309327662725');
-    fbq('track', 'PageView');
-    </script>
-    <noscript><img height="1" width="1" style="display:none"
-    src="https://www.facebook.com/tr?id=1770309327662725&ev=PageView&noscript=1"
-    /></noscript>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
-    
+    <title>Personal Loan Login</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <style>
-        /* Odoo containers ko override karne ke liye taaki white box na dikhe */
-        #wrapwrap, .s_embed_code, .container, .row, .col-lg-12, body, html {
-            background-color: #6c5ce7 !important;
-            background: #6c5ce7 !important;
-            box-shadow: none !important;
-            border: none !important;
-            padding: 0 !important;
-            margin: 0 !important;
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f4f7fa;
         }
-
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-            font-family: 'Poppins', sans-serif;
-        }
-
-        .page-wrapper {
-            background-color: #6c5ce7 !important;
-            min-height: 100vh;
-            width: 100vw;
-            display: flex;
-            justify-content: center;
-            align-items: flex-start;
-            padding-top: 5vh;
-            padding-left: 16px;
-            padding-right: 16px;
-            position: relative;
-        }
-
-        .landing-card {
-            background-color: #ffffff !important;
-            border-radius: 36px !important;
-            width: 100%;
-            max-width: 380px;
-            padding: 32px 24px 28px 24px;
-            text-align: center;
-            box-shadow: 0px 15px 35px rgba(0, 0, 0, 0.2) !important;
-            border: none !important;
-            outline: none !important;
-        }
-
-        .icon-container {
-            width: 76px;
-            height: 76px;
-            background: #e8e6ff;
-            border-radius: 50%;
-            margin: 0 auto 20px auto;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            position: relative;
-        }
-
-        .icon-container::before {
-            content: '';
-            position: absolute;
-            width: 96px;
-            height: 96px;
-            border-radius: 50%;
-            background: rgba(232, 230, 255, 0.4);
-            z-index: -1;
-        }
-
-        .brand-icon {
-            width: 52px;
-            height: 52px;
-            background: #6c5ce7;
-            border-radius: 16px;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            color: #ffffff;
-            font-weight: 700;
-            font-size: 20px;
-        }
-
-        .main-heading { font-size: 23px; color: #1e272e; font-weight: 700; margin-bottom: 6px; }
-        .sub-heading { font-size: 13.5px; color: #8395a7; margin-bottom: 30px; }
-
-        .step-row { display: flex; align-items: flex-start; text-align: left; margin-bottom: 22px; }
-        .step-number { width: 32px; height: 32px; background-color: #e8e6ff; color: #6c5ce7; border-radius: 50%; display: flex; justify-content: center; align-items: center; font-weight: 600; font-size: 14px; margin-right: 14px; flex-shrink: 0; }
-        .step-title { font-size: 15px; font-weight: 600; color: #1e272e; margin-bottom: 2px; }
-        .step-desc { font-size: 12px; color: #8395a7; line-height: 1.4; }
-
-        /* Button Customization with White Text */
-        .download-btn {
-            display: block;
-            background: #6c5ce7;
-            color: #ffffff !important;
-            text-decoration: none !important;
-            font-size: 16px;
-            font-weight: 600;
-            padding: 15px;
-            border-radius: 16px;
-            margin-top: 30px;
-            margin-bottom: 12px;
-            box-shadow: 0px 8px 20px rgba(108, 92, 231, 0.35);
-        }
-
-        .footer-text { font-size: 11px; color: #b2bec3; display: flex; align-items: center; justify-content: center; gap: 4px; }
-        .footer-subtext { font-size: 11px; color: #b2bec3; margin-top: 2px; }
-        .lock-icon { width: 12px; height: 12px; fill: #b2bec3; }
     </style>
 </head>
-<body>
+<body class="flex justify-center items-center min-h-screen p-4">
 
-    <div class="page-wrapper">
-        <div class="landing-card">
-            <div class="icon-container"><div class="brand-icon">LC</div></div>
-            <h1 class="main-heading">Apply Now & Get Money</h1>
-            <p class="sub-heading">Just 3 simple steps to approve your amount.</p>
-
-            <div class="step-row">
-                <div class="step-number">1</div>
-                <div class="step-content">
-                    <h3 class="step-title">Download App</h3>
-                    <p class="step-desc">Get the official Low Credit app from the link below</p>
-                </div>
+    <div class="w-full max-w-md bg-white rounded-3xl shadow-sm overflow-hidden p-5 border border-gray-100">
+        
+        <div class="flex flex-col items-center my-6">
+            <div class="w-16 h-16 bg-white border border-gray-200 rounded-lg flex items-center justify-center p-2 shadow-sm mb-3">
+                <svg class="w-12 h-12 text-blue-800" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                    <circle cx="12" cy="11" r="3"/>
+                    <path d="M14 13l2 2"/>
+                </svg>
             </div>
-            <div class="step-row">
-                <div class="step-number">2</div>
-                <div class="step-content">
-                    <h3 class="step-title">Quick Registration</h3>
-                    <p class="step-desc">Create account & complete basic KYC</p>
-                </div>
-            </div>
-            <div class="step-row">
-                <div class="step-number">3</div>
-                <div class="step-content">
-                    <h3 class="step-title">Receive Amount</h3>
-                    <p class="step-desc">Get money directly in your bank account</p>
-                </div>
-            </div>
-
-            <a href="https://llowcredit.space-z.ai/" class="download-btn">Download App Now</a>
-
-            <div class="footer-text">
-                <svg class="lock-icon" viewBox="0 0 24 24"><path d="M18 8h-1V6c0-2.76-2.24-5-5-5S7 3.24 7 6v2H6c-1.1 0-2 .9-2 2v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V10c0-1.1-.9-2-2-2zm-6 9c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2zm3.1-9H8.9V6c0-1.71 1.39-3.1 3.1-3.1 1.71 0 3.1 1.39 3.1 3.1v2z"/></svg>
-                100% Secure Download
-            </div>
-            <p class="footer-subtext">Click to download and start your application</p>
+            <p class="text-xs font-semibold text-blue-900 tracking-wide uppercase">Trusted Financial Services Since 2015</p>
         </div>
+
+        <div class="bg-gradient-to-br from-[#0a256a] to-[#1242b7] text-white rounded-2xl p-5 mb-6 relative overflow-hidden shadow-md">
+            <h2 class="text-xl font-bold leading-tight mb-2">Fast & Secure<br>Personal Loans</h2>
+            <div class="text-2xl font-extrabold text-[#38bdf8] my-3">₹5,000 - ₹1,00,000</div>
+            <p class="text-[11px] text-gray-300 mb-4">Interest Rates Starting From 13.8% p.a.</p>
+            
+            <div class="space-y-2 text-xs font-medium">
+                <div class="flex items-center gap-2">
+                    <span class="w-4 h-4 rounded-full border border-green-400 flex items-center justify-center text-[10px] text-green-400">✓</span>
+                    <span>Instant Eligibility Check</span>
+                </div>
+                <div class="flex items-center gap-2">
+                    <span class="w-4 h-4 rounded-full border border-green-400 flex items-center justify-center text-[10px] text-green-400">✓</span>
+                    <span>Low Documentation</span>
+                </div>
+                <div class="flex items-center gap-2">
+                    <span class="w-4 h-4 rounded-full border border-green-400 flex items-center justify-center text-[10px] text-green-400">✓</span>
+                    <span>Fast Approval Process</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="bg-white rounded-2xl border border-gray-100 p-4">
+            <h3 class="text-base font-bold text-gray-900 mb-4">Login with Mobile Number</h3>
+            
+            <div class="flex border border-gray-300 rounded-xl overflow-hidden focus-within:border-blue-600 transition mb-4">
+                <div class="bg-gray-50 px-4 flex items-center justify-center text-sm font-bold text-gray-700 border-r border-gray-200">
+                    +91
+                </div>
+                <input type="tel" maxlength="10" placeholder="Enter mobile number" class="w-full px-4 py-3.5 text-sm text-gray-800 outline-none placeholder-gray-400 font-medium" />
+            </div>
+
+            <button class="w-full bg-[#e2e8f0] text-[#a0aec0] font-bold py-3.5 rounded-xl text-sm transition cursor-not-allowed mb-5">
+                Get OTP
+            </button>
+        </div>
+
+        <div class="text-[11px] text-center text-gray-500 px-4 leading-normal">
+            By continuing, you agree to our 
+            <a href="#" class="text-[#02a9f7] font-medium hover:underline">Terms & Conditions</a> 
+            and 
+            <a href="#" class="text-[#02a9f7] font-medium hover:underline">Privacy Policy</a>.
+        </div>
+
     </div>
+
 </body>
 </html>
+
