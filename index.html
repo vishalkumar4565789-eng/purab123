@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>Low Credit - Apply Now</title>
 
     <!-- Meta Pixel Code -->
@@ -15,15 +15,12 @@
     t.src=v;s=b.getElementsByTagName(e)[0];
     s.parentNode.insertBefore(t,s)}(window, document,'script',
     'https://connect.facebook.net/en_US/fbevents.js');
-    fbq('init', '2467486793725261');
+    fbq('init', '1059486110162029');
     fbq('track', 'PageView');
     </script>
-    <noscript>
-        <img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=2467486793725261&ev=PageView&noscript=1" />
-    </noscript>
-    <noscript>
-        <img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=1770309327662725&ev=PageView&noscript=1" />
-    </noscript>
+    <noscript><img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=1059486110162029&ev=PageView&noscript=1"
+    /></noscript>
     <!-- End Meta Pixel Code -->
 
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -49,7 +46,7 @@
         .page-wrapper {
             background-color: #6c5ce7 !important;
             min-height: 100vh;
-            width: 100vw;
+            width: 100%;
             display: flex;
             justify-content: center;
             align-items: flex-start;
@@ -69,6 +66,7 @@
             box-shadow: 0px 15px 35px rgba(0, 0, 0, 0.2) !important;
             border: none !important;
             outline: none !important;
+            margin-bottom: 40px;
         }
 
         .icon-container {
@@ -127,6 +125,11 @@
             margin-top: 30px;
             margin-bottom: 12px;
             box-shadow: 0px 8px 20px rgba(108, 92, 231, 0.35);
+            transition: opacity 0.2s ease;
+        }
+
+        .download-btn:active {
+            opacity: 0.9;
         }
 
         .footer-text { font-size: 11px; color: #b2bec3; display: flex; align-items: center; justify-content: center; gap: 4px; }
